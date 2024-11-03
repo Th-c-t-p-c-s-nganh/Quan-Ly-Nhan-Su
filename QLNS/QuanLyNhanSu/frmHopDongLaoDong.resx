@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtbHopDong.Text" xml:space="preserve">
+    <value>			CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM
+				Độc lập – Tự do – Hạnh phúc
+
+
+				HỢP ĐỒNG LAO ĐỘNG
+
+(Ban hành theo Bộ luật lao động ngày 20 tháng 11 năm 2019)
+Hôm nay, ngày... tháng... năm 2024, tại Công ty MISA, chúng tôi gồm:
+Bên A : Người sử dụng lao động
+Công ty cổ phần MISA
+Địa chỉ: Tầng 9, tòa nhà Technosoft, phố Duy Tân, phường Dịch Vọng Hậu, Q. Cầu Giấy, TP. Hà Nội
+Đại diện: Lữ Thành Long Chức vụ: Chủ tịch HĐQT Quốc tịch: Việt Nam
+Bên B : Người lao động
+ÔNG / BÀ :	 	Quốc tịch:
+Ngày sinh:	 	Tại :
+Nghề nghiệp :	 	Giới tính:
+Điạ chỉ thường trú :	 
+Điạ chỉ cư trú	 
+Số CMND/CCCD :	 	Cấp ngày:	Tại :
+Cùng thoả thuận ký kết hợp đồng lao động và cam kết làm đúng những điều khoản sau đây:
+Điều 1: Công việc và Thời hạn hợp đồng
+•	Loại hợp đồng: Xác định thời hạn (tối đa 36 tháng) hoặc không xác định thời hạn.
+•	Địa điểm và vị trí làm việc: Phòng ban, chức danh cụ thể sẽ được quy định trong hợp đồng.
+•	Nhiệm vụ: Người lao động thực hiện công việc theo chức danh dưới sự quản lý của Ban Giám đốc và phối hợp với các bộ phận khác.
+Điều 2: Lương và Phụ cấp
+•	Lương căn bản và phụ cấp: Theo quy định công ty, trả bằng tiền mặt hoặc chuyển khoản vào ngày cố định hàng tháng.
+•	Chế độ nâng bậc lương: Xét dựa trên kết quả làm việc.
+Điều 3: Thời gian làm việc, nghỉ ngơi, bảo hộ lao động và bảo hiểm
+•	Thời gian làm việc: 8 giờ/ngày, 6 ngày/tuần; nghỉ hàng tuần vào Chủ nhật.
+•	Nghỉ lễ, phép năm: Theo quy định của pháp luật và nội quy công ty.
+•	Bảo hiểm: Được tham gia BHXH, BHYT và BHTN theo luật.
+Điều 4: Đào tạo và Nghĩa vụ người lao động
+•	Đào tạo: Được công ty bồi dưỡng và đào tạo để phát triển năng lực.
+•	Khen thưởng và hỗ trợ: Theo quy định công ty, có các khoản hỗ trợ cơm trưa, xăng xe, điện thoại...
+•	Nghĩa vụ: Tuân thủ hợp đồng và hoàn thành công việc theo yêu cầu của công ty.
+Điều 5: Nghĩa vụ và quyền lợi của người sử dụng lao động
+•	Nghĩa vụ: Đảm bảo điều kiện làm việc và thanh toán quyền lợi cho người lao động.
+•	Quyền lợi: Điều chỉnh công việc, quyền chấm dứt hợp đồng hoặc xử lý kỷ luật theo pháp luật.
+Điều 6: Các thỏa thuận khác
+Các thỏa thuận bảo mật, giải quyết khi hợp đồng chịu ảnh hưởng bởi thiên tai, hỏa hoạn hoặc thỏa thuận khác về bí mật kinh doanh sẽ được quy định riêng khi cần.
+Điều 7: Điều khoản thi hành
+Hợp đồng này được lập thành 2 bản, mỗi bên giữ một bản, có giá trị pháp lý và có hiệu lực kể từ ngày ký kết.
+
+
+
+
+                      NGƯỜI LAO ĐỘNG                               NGƯỜI SỬ DỤNG LAO ĐỘNG
+                         (Ký, ghi rõ họ tên)                                          (Ký, ghi rõ họ tên)
+ 
+
+
+
+						     Lữ Thành Long</value>
+  </data>
+  <metadata name="tbNHANVIENBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>700, 17</value>
+  </metadata>
+  <metadata name="qLNHANSUDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="tbHOPDONGBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1189, 17</value>
+  </metadata>
+  <metadata name="tb_HOPDONGTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>458, 17</value>
+  </metadata>
+  <metadata name="tb_NHANVIENTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>945, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>97</value>
+  </metadata>
+</root>
