@@ -24,41 +24,41 @@ namespace BusinessLayer
             foreach (var item in lstNv)
             {
                 _dto = new NHANVIEN_DTO();
-                _dto.MANV = item.MANV;
-                _dto.HOTEN = item.HOTEN;
-                _dto.NGAYSINH = item.NGAYSINH;
-                _dto.DIACHI = item.DIACHI;
-                _dto.DIENTHOAI = item.DIENTHOAI;
-                _dto.CCCD = item.CCCD;
-                _dto.HINHANH = item.HINHANH;
+            _dto.MANV = item.MANV;
+            _dto.HOTEN = item.HOTEN;
+            _dto.NGAYSINH = item.NGAYSINH;
+            _dto.DIACHI = item.DIACHI;
+            _dto.DIENTHOAI = item.DIENTHOAI;
+            _dto.CCCD = item.CCCD;
+            _dto.HINHANH = item.HINHANH;
 
-                _dto.IDBP = item.IDBP;
-                var bp = db.tb_BOPHAN.FirstOrDefault(_ => _.IDBP == item.IDBP);
-                _dto.TENBP = bp.TENBP;
+            _dto.IDBP = item.IDBP;
+            var bp = db.tb_BOPHAN.FirstOrDefault(_ => _.IDBP == item.IDBP);
+            _dto.TENBP = bp.TENBP;
 
-                _dto.IDPB = item.IDPB;
-                var pb = db.tb_PHONGBAN.FirstOrDefault(_ => _.IDPB == item.IDPB);
-                _dto.TENPB = pb.TENPB;
+            _dto.IDPB = item.IDPB;
+            var pb = db.tb_PHONGBAN.FirstOrDefault(_ => _.IDPB == item.IDPB);
+            _dto.TENPB = pb.TENPB;
 
-                _dto.IDCT = item.IDCT;
-                var ct = db.tb_CONGTY.FirstOrDefault(_ => _.IDCT == item.IDCT);
-                _dto.TENCT = ct.TENCTY;
+            _dto.IDCT = item.IDCT;
+            var ct = db.tb_CONGTY.FirstOrDefault(_ => _.IDCT == item.IDCT);
+            _dto.TENCT = ct.TENCTY;
 
-                _dto.IDCV = item.IDCV;
-                var cv = db.tb_CHUCVU.FirstOrDefault(_ => _.IDCV == item.IDCV);
-                _dto.TENCV = cv.TENCV;
+            _dto.IDCV = item.IDCV;
+            var cv = db.tb_CHUCVU.FirstOrDefault(_ => _.IDCV == item.IDCV);
+            _dto.TENCV = cv.TENCV;
 
-                _dto.IDDT = item.IDDT;
-                var dt = db.tb_DANTOC.FirstOrDefault(_ => _.IDDT == item.IDDT);
-                _dto.TENDT = dt.TENDT;
+            _dto.IDDT = item.IDDT;
+            var dt = db.tb_DANTOC.FirstOrDefault(_ => _.IDDT == item.IDDT);
+            _dto.TENDT = dt.TENDT;
 
-                _dto.IDTG = item.IDTG;
-                var tg = db.tb_TONGIAO.FirstOrDefault(_ => _.IDTG == item.IDTG);
-                _dto.TENTG = tg.TENTG;
+            _dto.IDTG = item.IDTG;
+            var tg = db.tb_TONGIAO.FirstOrDefault(_ => _.IDTG == item.IDTG);
+            _dto.TENTG = tg.TENTG;
 
-                _dto.IDTD = item.IDTD;
-                var td = db.tb_TRINHDO.FirstOrDefault(_ => _.IDTD == item.IDTD);
-                _dto.TENTD = td.TENTD;
+            _dto.IDTD = item.IDTD;
+            var td = db.tb_TRINHDO.FirstOrDefault(_ => _.IDTD == item.IDTD);
+            _dto.TENTD = td.TENTD;
 
                 list.Add(_dto);
             }
@@ -101,6 +101,7 @@ namespace BusinessLayer
                 dt.IDTG = item.IDTG;
                 dt.IDDT = item.IDDT;
                 dt.IDPB = item.IDPB;
+                dt.IDTD = item.IDTD;
                 dt.IDBP = item.IDBP;
                 dt.HINHANH = item.HINHANH;
                 db.SaveChanges();

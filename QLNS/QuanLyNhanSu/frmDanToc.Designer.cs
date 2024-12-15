@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.txtDanToc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
@@ -39,19 +40,18 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.iDDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tENDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qLNHANSUDataSet1 = new QuanLyNhanSu.QLNHANSUDataSet1();
             this.tbDANTOCBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLNHANSUDataSet1 = new QuanLyNhanSu.QLNHANSUDataSet1();
             this.tb_DANTOCTableAdapter1 = new QuanLyNhanSu.QLNHANSUDataSet1TableAdapters.tb_DANTOCTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDANTOCBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -72,6 +72,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.btnXoa);
             this.splitContainer1.Panel1.Controls.Add(this.btnSua);
             this.splitContainer1.Panel1.Controls.Add(this.btnThem);
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -79,6 +80,16 @@
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 170;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(246, 3);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.TabIndex = 16;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtDanToc
             // 
@@ -175,16 +186,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(246, 3);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 16;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // iDDTDataGridViewTextBoxColumn
             // 
             this.iDDTDataGridViewTextBoxColumn.DataPropertyName = "IDDT";
@@ -202,15 +203,15 @@
             this.tENDTDataGridViewTextBoxColumn.Name = "tENDTDataGridViewTextBoxColumn";
             this.tENDTDataGridViewTextBoxColumn.Width = 125;
             // 
-            // qLNHANSUDataSet1
-            // 
-            this.qLNHANSUDataSet1.DataSetName = "QLNHANSUDataSet1";
-            this.qLNHANSUDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tbDANTOCBindingSource1
             // 
             this.tbDANTOCBindingSource1.DataMember = "tb_DANTOC";
             this.tbDANTOCBindingSource1.DataSource = this.qLNHANSUDataSet1;
+            // 
+            // qLNHANSUDataSet1
+            // 
+            this.qLNHANSUDataSet1.DataSetName = "QLNHANSUDataSet1";
+            this.qLNHANSUDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tb_DANTOCTableAdapter1
             // 
@@ -231,8 +232,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDANTOCBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

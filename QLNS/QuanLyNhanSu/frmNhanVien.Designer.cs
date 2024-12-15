@@ -388,9 +388,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(246, 3);
+            this.btnLuu.Location = new System.Drawing.Point(246, 0);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(75, 39);
             this.btnLuu.TabIndex = 44;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -398,9 +398,9 @@
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(489, 3);
+            this.btnDong.Location = new System.Drawing.Point(489, 0);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(75, 23);
+            this.btnDong.Size = new System.Drawing.Size(75, 39);
             this.btnDong.TabIndex = 43;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
@@ -408,9 +408,9 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(408, 3);
+            this.btnHuy.Location = new System.Drawing.Point(408, 0);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.Size = new System.Drawing.Size(75, 39);
             this.btnHuy.TabIndex = 42;
             this.btnHuy.Text = "Huỷ";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -418,9 +418,9 @@
             // 
             // btnIn
             // 
-            this.btnIn.Location = new System.Drawing.Point(327, 3);
+            this.btnIn.Location = new System.Drawing.Point(327, 0);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(75, 23);
+            this.btnIn.Size = new System.Drawing.Size(75, 39);
             this.btnIn.TabIndex = 41;
             this.btnIn.Text = "In";
             this.btnIn.UseVisualStyleBackColor = true;
@@ -428,9 +428,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(165, 3);
+            this.btnXoa.Location = new System.Drawing.Point(165, 0);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 40;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -438,9 +438,9 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(84, 3);
+            this.btnSua.Location = new System.Drawing.Point(84, 0);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 39;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -448,9 +448,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(3, 3);
+            this.btnThem.Location = new System.Drawing.Point(3, 0);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 38;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -459,6 +459,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mANVDataGridViewTextBoxColumn,
@@ -637,6 +638,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmNhanVien";
             this.Text = "Nhân viên";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

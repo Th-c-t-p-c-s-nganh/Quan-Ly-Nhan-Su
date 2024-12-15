@@ -33,5 +33,41 @@ namespace QuanLyNhanSu.Properties {
                 return ((string)(this["QLNHANSUConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LuuMatKhau {
+            get {
+                return ((bool)(this["LuuMatKhau"]));
+            }
+            set {
+                this["LuuMatKhau"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TenDangNhap {
+            get {
+                return ((string)(this["TenDangNhap"]));
+            }
+            set {
+                this["TenDangNhap"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MatKhau {
+            get {
+                return ((string)(this["MatKhau"]));
+            }
+            set {
+                this["MatKhau"] = value;
+            }
+        }
     }
 }

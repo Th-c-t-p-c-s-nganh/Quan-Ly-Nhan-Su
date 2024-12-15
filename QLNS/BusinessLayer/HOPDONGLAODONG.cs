@@ -47,8 +47,9 @@ namespace BusinessLayer
                 dt.NGAYBATDAU = item.NGAYBATDAU;
                 dt.MANV = item.MANV;
                 dt.THOIHAN = item.THOIHAN;
-                dt.NOIDUNG = item.NOIDUNG;
+                //dt.NOIDUNG = item.NOIDUNG;
                 dt.LANKY = item.LANKY;
+                dt.LUONGCOBAN = item.LUONGCOBAN;
                 dt.IDCT = item.IDCT;
                 dt.UPDATED_BY = item.UPDATED_BY;
                 dt.UPDATED_DATE = item.UPDATED_DATE;

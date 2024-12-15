@@ -51,10 +51,18 @@ namespace QuanLyNhanSu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            SaveData();
-            _them = false;
-            _showHide(true);
-            RefreshDataGrid();
+            try
+            {
+                SaveData();
+                _them = false;
+                _showHide(true);
+                MessageBox.Show("Cập nhật thành công ! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -94,6 +102,8 @@ namespace QuanLyNhanSu
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
         }
 

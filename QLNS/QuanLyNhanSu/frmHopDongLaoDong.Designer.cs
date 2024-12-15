@@ -67,6 +67,7 @@
             this.lANKYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tHOIHANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hESOLUONGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lUONGCOBANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mANVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELETEDBYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,8 +77,13 @@
             this.cREATEDBYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cREATEDDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbHOPDONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tb_HOPDONGTableAdapter = new QuanLyNhanSu.QLNHANSUDataSet1TableAdapters.tb_HOPDONGTableAdapter();
+            this.qLNHANSUDataSet12 = new QuanLyNhanSu.QLNHANSUDataSet12();
             this.tb_NHANVIENTableAdapter = new QuanLyNhanSu.QLNHANSUDataSet1TableAdapters.tb_NHANVIENTableAdapter();
+            this.qLNHANSUDataSet11 = new QuanLyNhanSu.QLNHANSUDataSet11();
+            this.qLNHANSUDataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tb_HOPDONGTableAdapter = new QuanLyNhanSu.QLNHANSUDataSet12TableAdapters.tb_HOPDONGTableAdapter();
+            this.txtLuongCB = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -86,6 +92,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHOPDONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet11BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -97,6 +106,8 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.txtLuongCB);
+            this.splitContainer1.Panel1.Controls.Add(this.label10);
             this.splitContainer1.Panel1.Controls.Add(this.rtbHopDong);
             this.splitContainer1.Panel1.Controls.Add(this.txtThoiHan);
             this.splitContainer1.Panel1.Controls.Add(this.cboNhanVien);
@@ -391,6 +402,7 @@
             this.lANKYDataGridViewTextBoxColumn,
             this.tHOIHANDataGridViewTextBoxColumn,
             this.hESOLUONGDataGridViewTextBoxColumn,
+            this.lUONGCOBANDataGridViewTextBoxColumn,
             this.mANVDataGridViewTextBoxColumn,
             this.iDCTDataGridViewTextBoxColumn,
             this.dELETEDBYDataGridViewTextBoxColumn,
@@ -411,7 +423,7 @@
             // sOHDDataGridViewTextBoxColumn
             // 
             this.sOHDDataGridViewTextBoxColumn.DataPropertyName = "SOHD";
-            this.sOHDDataGridViewTextBoxColumn.HeaderText = "Số HĐ";
+            this.sOHDDataGridViewTextBoxColumn.HeaderText = "SOHD";
             this.sOHDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sOHDDataGridViewTextBoxColumn.Name = "sOHDDataGridViewTextBoxColumn";
             this.sOHDDataGridViewTextBoxColumn.Width = 125;
@@ -419,7 +431,7 @@
             // nGAYBATDAUDataGridViewTextBoxColumn
             // 
             this.nGAYBATDAUDataGridViewTextBoxColumn.DataPropertyName = "NGAYBATDAU";
-            this.nGAYBATDAUDataGridViewTextBoxColumn.HeaderText = "Ngày bắt đầu";
+            this.nGAYBATDAUDataGridViewTextBoxColumn.HeaderText = "NGAYBATDAU";
             this.nGAYBATDAUDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nGAYBATDAUDataGridViewTextBoxColumn.Name = "nGAYBATDAUDataGridViewTextBoxColumn";
             this.nGAYBATDAUDataGridViewTextBoxColumn.Width = 125;
@@ -427,7 +439,7 @@
             // nGAYKETTHUCDataGridViewTextBoxColumn
             // 
             this.nGAYKETTHUCDataGridViewTextBoxColumn.DataPropertyName = "NGAYKETTHUC";
-            this.nGAYKETTHUCDataGridViewTextBoxColumn.HeaderText = "Ngày kết thúc";
+            this.nGAYKETTHUCDataGridViewTextBoxColumn.HeaderText = "NGAYKETTHUC";
             this.nGAYKETTHUCDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nGAYKETTHUCDataGridViewTextBoxColumn.Name = "nGAYKETTHUCDataGridViewTextBoxColumn";
             this.nGAYKETTHUCDataGridViewTextBoxColumn.Width = 125;
@@ -435,7 +447,7 @@
             // nGAYKYDataGridViewTextBoxColumn
             // 
             this.nGAYKYDataGridViewTextBoxColumn.DataPropertyName = "NGAYKY";
-            this.nGAYKYDataGridViewTextBoxColumn.HeaderText = "Ngày ký";
+            this.nGAYKYDataGridViewTextBoxColumn.HeaderText = "NGAYKY";
             this.nGAYKYDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nGAYKYDataGridViewTextBoxColumn.Name = "nGAYKYDataGridViewTextBoxColumn";
             this.nGAYKYDataGridViewTextBoxColumn.Width = 125;
@@ -446,13 +458,12 @@
             this.nOIDUNGDataGridViewTextBoxColumn.HeaderText = "NOIDUNG";
             this.nOIDUNGDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nOIDUNGDataGridViewTextBoxColumn.Name = "nOIDUNGDataGridViewTextBoxColumn";
-            this.nOIDUNGDataGridViewTextBoxColumn.Visible = false;
             this.nOIDUNGDataGridViewTextBoxColumn.Width = 125;
             // 
             // lANKYDataGridViewTextBoxColumn
             // 
             this.lANKYDataGridViewTextBoxColumn.DataPropertyName = "LANKY";
-            this.lANKYDataGridViewTextBoxColumn.HeaderText = "Lần ký";
+            this.lANKYDataGridViewTextBoxColumn.HeaderText = "LANKY";
             this.lANKYDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lANKYDataGridViewTextBoxColumn.Name = "lANKYDataGridViewTextBoxColumn";
             this.lANKYDataGridViewTextBoxColumn.Width = 125;
@@ -460,7 +471,7 @@
             // tHOIHANDataGridViewTextBoxColumn
             // 
             this.tHOIHANDataGridViewTextBoxColumn.DataPropertyName = "THOIHAN";
-            this.tHOIHANDataGridViewTextBoxColumn.HeaderText = "Thời hạn";
+            this.tHOIHANDataGridViewTextBoxColumn.HeaderText = "THOIHAN";
             this.tHOIHANDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tHOIHANDataGridViewTextBoxColumn.Name = "tHOIHANDataGridViewTextBoxColumn";
             this.tHOIHANDataGridViewTextBoxColumn.Width = 125;
@@ -468,15 +479,23 @@
             // hESOLUONGDataGridViewTextBoxColumn
             // 
             this.hESOLUONGDataGridViewTextBoxColumn.DataPropertyName = "HESOLUONG";
-            this.hESOLUONGDataGridViewTextBoxColumn.HeaderText = "Hệ số lương";
+            this.hESOLUONGDataGridViewTextBoxColumn.HeaderText = "HESOLUONG";
             this.hESOLUONGDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hESOLUONGDataGridViewTextBoxColumn.Name = "hESOLUONGDataGridViewTextBoxColumn";
             this.hESOLUONGDataGridViewTextBoxColumn.Width = 125;
             // 
+            // lUONGCOBANDataGridViewTextBoxColumn
+            // 
+            this.lUONGCOBANDataGridViewTextBoxColumn.DataPropertyName = "LUONGCOBAN";
+            this.lUONGCOBANDataGridViewTextBoxColumn.HeaderText = "LUONGCOBAN";
+            this.lUONGCOBANDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lUONGCOBANDataGridViewTextBoxColumn.Name = "lUONGCOBANDataGridViewTextBoxColumn";
+            this.lUONGCOBANDataGridViewTextBoxColumn.Width = 125;
+            // 
             // mANVDataGridViewTextBoxColumn
             // 
             this.mANVDataGridViewTextBoxColumn.DataPropertyName = "MANV";
-            this.mANVDataGridViewTextBoxColumn.HeaderText = "Mã NV";
+            this.mANVDataGridViewTextBoxColumn.HeaderText = "MANV";
             this.mANVDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.mANVDataGridViewTextBoxColumn.Name = "mANVDataGridViewTextBoxColumn";
             this.mANVDataGridViewTextBoxColumn.Width = 125;
@@ -487,7 +506,6 @@
             this.iDCTDataGridViewTextBoxColumn.HeaderText = "IDCT";
             this.iDCTDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDCTDataGridViewTextBoxColumn.Name = "iDCTDataGridViewTextBoxColumn";
-            this.iDCTDataGridViewTextBoxColumn.Visible = false;
             this.iDCTDataGridViewTextBoxColumn.Width = 125;
             // 
             // dELETEDBYDataGridViewTextBoxColumn
@@ -541,15 +559,49 @@
             // tbHOPDONGBindingSource
             // 
             this.tbHOPDONGBindingSource.DataMember = "tb_HOPDONG";
-            this.tbHOPDONGBindingSource.DataSource = this.qLNHANSUDataSet1;
+            this.tbHOPDONGBindingSource.DataSource = this.qLNHANSUDataSet12;
+            // 
+            // qLNHANSUDataSet12
+            // 
+            this.qLNHANSUDataSet12.DataSetName = "QLNHANSUDataSet12";
+            this.qLNHANSUDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tb_NHANVIENTableAdapter
+            // 
+            this.tb_NHANVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // qLNHANSUDataSet11
+            // 
+            this.qLNHANSUDataSet11.DataSetName = "QLNHANSUDataSet11";
+            this.qLNHANSUDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // qLNHANSUDataSet11BindingSource
+            // 
+            this.qLNHANSUDataSet11BindingSource.DataSource = this.qLNHANSUDataSet11;
+            this.qLNHANSUDataSet11BindingSource.Position = 0;
             // 
             // tb_HOPDONGTableAdapter
             // 
             this.tb_HOPDONGTableAdapter.ClearBeforeFill = true;
             // 
-            // tb_NHANVIENTableAdapter
+            // txtLuongCB
             // 
-            this.tb_NHANVIENTableAdapter.ClearBeforeFill = true;
+            this.txtLuongCB.Location = new System.Drawing.Point(654, 235);
+            this.txtLuongCB.Name = "txtLuongCB";
+            this.txtLuongCB.Size = new System.Drawing.Size(179, 22);
+            this.txtLuongCB.TabIndex = 58;
+            this.txtLuongCB.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label10.Location = new System.Drawing.Point(504, 229);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 21);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "Mức lương cơ bản";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // frmHopDongLaoDong
             // 
@@ -569,6 +621,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbHOPDONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNHANSUDataSet11BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -597,7 +652,6 @@
         private System.Windows.Forms.TextBox txtSHD;
         private System.Windows.Forms.Label label1;
         private QLNHANSUDataSet1 qLNHANSUDataSet1;
-        private QLNHANSUDataSet1TableAdapters.tb_HOPDONGTableAdapter tb_HOPDONGTableAdapter;
         private System.Windows.Forms.ComboBox cboNhanVien;
         private System.Windows.Forms.TextBox txtHeSoLuong;
         private System.Windows.Forms.TextBox txtLanKy;
@@ -606,7 +660,11 @@
         private System.Windows.Forms.TextBox txtThoiHan;
         private System.Windows.Forms.RichTextBox rtbHopDong;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private QLNHANSUDataSet11 qLNHANSUDataSet11;
+        private System.Windows.Forms.BindingSource qLNHANSUDataSet11BindingSource;
+        private QLNHANSUDataSet12 qLNHANSUDataSet12;
         private System.Windows.Forms.BindingSource tbHOPDONGBindingSource;
+        private QLNHANSUDataSet12TableAdapters.tb_HOPDONGTableAdapter tb_HOPDONGTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn sOHDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nGAYBATDAUDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nGAYKETTHUCDataGridViewTextBoxColumn;
@@ -615,6 +673,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lANKYDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tHOIHANDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hESOLUONGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lUONGCOBANDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mANVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDCTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dELETEDBYDataGridViewTextBoxColumn;
@@ -623,5 +682,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn uPDATEDDATEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cREATEDBYDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cREATEDDATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtLuongCB;
+        private System.Windows.Forms.Label label10;
     }
 }

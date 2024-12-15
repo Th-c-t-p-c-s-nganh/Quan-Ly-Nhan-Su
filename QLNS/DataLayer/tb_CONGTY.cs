@@ -17,8 +17,8 @@ namespace DataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tb_CONGTY()
         {
-            this.tb_HOPDONG = new HashSet<tb_HOPDONG>();
             this.tb_NHANVIEN = new HashSet<tb_NHANVIEN>();
+            this.tb_HOPDONG = new HashSet<tb_HOPDONG>();
         }
     
         public int IDCT { get; set; }
@@ -28,8 +28,8 @@ namespace DataLayer
         public string DIACHI { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tb_HOPDONG> tb_HOPDONG { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_NHANVIEN> tb_NHANVIEN { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_HOPDONG> tb_HOPDONG { get; set; }
     }
 }

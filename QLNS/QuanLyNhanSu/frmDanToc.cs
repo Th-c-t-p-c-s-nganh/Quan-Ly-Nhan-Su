@@ -53,18 +53,26 @@ namespace QuanLyNhanSu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            SaveData();
-            _them = false;
-            _showHide(true);
-            RefreshDataGrid();
+            try
+            {
+                SaveData();
+                _them = false;
+                _showHide(true);
+                MessageBox.Show("Cập nhật thành công ! " , "Thông báo" , MessageBoxButtons.OK , MessageBoxIcon.Information );
+                RefreshDataGrid();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtDanToc.Text = string.Empty;
-            _them = true;
-            _showHide(false);
-            RefreshDataGrid();
+                txtDanToc.Text = string.Empty;
+                _them = true;
+                _showHide(false);
+                RefreshDataGrid();  
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -90,12 +98,14 @@ namespace QuanLyNhanSu
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            _them = false;
-            _showHide(true);
-        }
+                _them = false;
+                _showHide(true);
+            }
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
         }
 
@@ -123,6 +133,11 @@ namespace QuanLyNhanSu
                 _id = Convert.ToInt32(row.Cells[0].Value); 
                 txtDanToc.Text = row.Cells[1].Value.ToString();
             }
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

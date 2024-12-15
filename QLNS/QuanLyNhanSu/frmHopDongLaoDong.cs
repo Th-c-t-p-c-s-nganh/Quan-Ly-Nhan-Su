@@ -25,10 +25,12 @@ namespace QuanLyNhanSu
 
         private void frmHopDongLaoDong_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLNHANSUDataSet12.tb_HOPDONG' table. You can move, or remove it, as needed.
+            this.tb_HOPDONGTableAdapter.Fill(this.qLNHANSUDataSet12.tb_HOPDONG);
+            // TODO: This line of code loads data into the 'qLNHANSUDataSet11.tb_HOPDONG' table. You can move, or remove it, as needed.
             // TODO: This line of code loads data into the 'qLNHANSUDataSet1.tb_NHANVIEN' table. You can move, or remove it, as needed.
             this.tb_NHANVIENTableAdapter.Fill(this.qLNHANSUDataSet1.tb_NHANVIEN);
             // TODO: This line of code loads data into the 'qLNHANSUDataSet1.tb_HOPDONG' table. You can move, or remove it, as needed.
-            this.tb_HOPDONGTableAdapter.Fill(this.qLNHANSUDataSet1.tb_HOPDONG);
             _hd = new HOPDONGLAODONG();
             _nv = new NHANVIEN();
             _showHide(true);
@@ -72,9 +74,10 @@ namespace QuanLyNhanSu
                 dt.HESOLUONG = double.Parse(txtHeSoLuong.Text);
                 dt.LANKY = int.Parse(txtLanKy.Text);
                 dt.MANV = int.Parse(cboNhanVien.SelectedValue.ToString());
-                dt.NOIDUNG = rtbHopDong.Text;
+                //dt.NOIDUNG = rtbHopDong.Text;
                 dt.IDCT = 0;
                 dt.CREATED_BY = 1;
+                dt.LUONGCOBAN = int.Parse(txtLuongCB.Text);
                 dt.CREATED_DATE = DateTime.Now;
                 _hd.Add(dt);
             }
@@ -88,6 +91,7 @@ namespace QuanLyNhanSu
                 dt.HESOLUONG = double.Parse(txtHeSoLuong.Text);
                 dt.LANKY = int.Parse(txtLanKy.Text);
                 dt.MANV = int.Parse(cboNhanVien.SelectedValue.ToString());
+                dt.LUONGCOBAN = int.Parse(txtLuongCB.Text);
                 dt.IDCT = 0;
                 dt.CREATED_BY = 1;
                 dt.CREATED_DATE = DateTime.Now;
@@ -128,11 +132,19 @@ namespace QuanLyNhanSu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            SaveData();
-            RefreshDataGrid();
-            _them = false;
-            _showHide(true);
-            
+            try
+            {
+                SaveData();
+                _them = false;
+                _showHide(true);
+                MessageBox.Show("Cập nhật thành công ! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
+
         }
 
         private void btnIn_Click(object sender, EventArgs e)
@@ -148,6 +160,8 @@ namespace QuanLyNhanSu
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
         }
 
@@ -157,6 +171,16 @@ namespace QuanLyNhanSu
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

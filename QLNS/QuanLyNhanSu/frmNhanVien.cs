@@ -90,7 +90,7 @@ namespace QuanLyNhanSu
 
         void RefreshDataGrid()
         {
-            var data = _NHANVIEN.getFullList();
+            var data = _NHANVIEN.getList();
             tbNHANVIENBindingSource.DataSource = data;
             dataGridView1.DataSource = tbNHANVIENBindingSource;
         }
@@ -106,7 +106,7 @@ namespace QuanLyNhanSu
         {
             _them = false;
             _showHide(false);
-            RefreshDataGrid();
+            //RefreshDataGrid();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -120,10 +120,18 @@ namespace QuanLyNhanSu
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            SaveData();
-            RefreshDataGrid();
-            _them = false;
-            _showHide(true);
+            try
+            {
+                SaveData();
+                _them = false;
+                _showHide(true);
+                MessageBox.Show("Cập nhật thành công ! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
         }
 
         private void btnIn_Click(object sender, EventArgs e)
@@ -139,6 +147,8 @@ namespace QuanLyNhanSu
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
         }
 
@@ -241,7 +251,7 @@ namespace QuanLyNhanSu
         private void btnChonAnh_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Picture file(.png , .jgp)| *.png; *.jgp";
+            ofd.Filter = "Picture file(.png , .jgp , .jpg)| *.png; *.jgp ; *.jpg";
             ofd.Title = "Chọn hình ảnh";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -257,12 +267,17 @@ namespace QuanLyNhanSu
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
                 _id = Convert.ToInt32(row.Cells[0].Value); 
 
-                txtName.Text = row.Cells[1].Value?.ToString(); 
-                cboxGT.Checked = row.Cells[3].Value is bool ? (bool)row.Cells[3].Value : false; 
+                txtName.Text = row.Cells[1].Value?.ToString();
+                cboxGT.Checked = row.Cells[3].Value is bool value && value;
                 dtNgaySinh.Value = row.Cells[4].Value is DateTime ? (DateTime)row.Cells[4].Value : DateTime.Now; 
                 txtCCCD.Text = row.Cells[6].Value?.ToString(); 
                 txtSDT.Text = row.Cells[5].Value?.ToString(); 
                 txtDiaChi.Text = row.Cells[7].Value?.ToString(); 
+                cboBoPhan.SelectedValue = row.Cells[8].Value;
+                cboChucVu.SelectedValue = row.Cells[9].Value;
+                cboDanToc.SelectedValue = row.Cells[10].Value;
+                cboTonGiao.SelectedValue = row.Cells[11].Value;
+                cboTrinhDo.SelectedValue = row.Cells[11].Value;
 
                 if (row.Cells[2].Value != null)
                 {

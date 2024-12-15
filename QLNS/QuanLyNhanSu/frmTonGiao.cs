@@ -97,6 +97,8 @@ namespace QuanLyNhanSu
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
         }
 

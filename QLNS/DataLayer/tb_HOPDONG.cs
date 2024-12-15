@@ -15,13 +15,14 @@ namespace DataLayer
     public partial class tb_HOPDONG
     {
         public string SOHD { get; set; }
-        public System.DateTime NGAYBATDAU { get; set; }
-        public System.DateTime NGAYKETTHUC { get; set; }
-        public System.DateTime NGAYKY { get; set; }
+        public Nullable<System.DateTime> NGAYBATDAU { get; set; }
+        public Nullable<System.DateTime> NGAYKETTHUC { get; set; }
+        public Nullable<System.DateTime> NGAYKY { get; set; }
         public string NOIDUNG { get; set; }
         public Nullable<int> LANKY { get; set; }
         public Nullable<int> THOIHAN { get; set; }
         public Nullable<double> HESOLUONG { get; set; }
+        public Nullable<int> LUONGCOBAN { get; set; }
         public Nullable<int> MANV { get; set; }
         public Nullable<int> IDCT { get; set; }
         public Nullable<int> DELETED_BY { get; set; }

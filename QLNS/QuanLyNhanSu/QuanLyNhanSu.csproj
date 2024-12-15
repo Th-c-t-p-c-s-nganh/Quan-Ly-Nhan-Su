@@ -75,11 +75,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBangCongChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBangCongChiTiet.Designer.cs">
+      <DependentUpon>frmBangCongChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBangLuong.Designer.cs">
+      <DependentUpon>frmBangLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBoPhan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBoPhan.Designer.cs">
       <DependentUpon>frmBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapNhatNgayCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatNgayCong.Designer.cs">
+      <DependentUpon>frmCapNhatNgayCong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChucVu.cs">
       <SubType>Form</SubType>
@@ -93,6 +111,18 @@
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDieuChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDieuChuyen.Designer.cs">
+      <DependentUpon>frmDieuChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHopDongLaoDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +134,18 @@
     </Compile>
     <Compile Include="frmKhenThuongKyLuat.Designer.cs">
       <DependentUpon>frmKhenThuongKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiCa.Designer.cs">
+      <DependentUpon>frmLoaiCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiCong.Designer.cs">
+      <DependentUpon>frmLoaiCong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
@@ -117,6 +159,12 @@
     <Compile Include="frmPhongBan.Designer.cs">
       <DependentUpon>frmPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhuCap.Designer.cs">
+      <DependentUpon>frmPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTonGiao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +177,13 @@
     <Compile Include="frmTrinhDo.Designer.cs">
       <DependentUpon>frmTrinhDo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBangCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBangCong.Designer.cs">
+      <DependentUpon>frmBangCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +208,73 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNHANSUDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLNHANSUDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNHANSUDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHANSUDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\frmBangLuongNhanVienh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmBangLuongNhanVienh.Designer.cs">
+      <DependentUpon>frmBangLuongNhanVienh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\frmLoadBangCongTopHopReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\frmLoadBangCongTopHopReport.Designer.cs">
+      <DependentUpon>frmLoadBangCongTopHopReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\frmNhanVienReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,8 +282,17 @@
       <DependentUpon>frmNhanVienReport.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="frmBangCongChiTiet.resx">
+      <DependentUpon>frmBangCongChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBangLuong.resx">
+      <DependentUpon>frmBangLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBoPhan.resx">
       <DependentUpon>frmBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapNhatNgayCong.resx">
+      <DependentUpon>frmCapNhatNgayCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChucVu.resx">
       <DependentUpon>frmChucVu.cs</DependentUpon>
@@ -169,11 +300,23 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDieuChuyen.resx">
+      <DependentUpon>frmDieuChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHopDongLaoDong.resx">
       <DependentUpon>frmHopDongLaoDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhenThuongKyLuat.resx">
       <DependentUpon>frmKhenThuongKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiCa.resx">
+      <DependentUpon>frmLoaiCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiCong.resx">
+      <DependentUpon>frmLoaiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
@@ -181,11 +324,17 @@
     <EmbeddedResource Include="frmPhongBan.resx">
       <DependentUpon>frmPhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPhuCap.resx">
+      <DependentUpon>frmPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTonGiao.resx">
       <DependentUpon>frmTonGiao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrinhDo.resx">
       <DependentUpon>frmTrinhDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBangCong.resx">
+      <DependentUpon>frmBangCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -203,9 +352,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportForm\frmBangLuongNhanVienh.resx">
+      <DependentUpon>frmBangLuongNhanVienh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\frmLoadBangCongTopHopReport.resx">
+      <DependentUpon>frmLoadBangCongTopHopReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\frmNhanVienReport.resx">
       <DependentUpon>frmNhanVienReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\BangCongTongHop.rdlc" />
+    <EmbeddedResource Include="Report\rptBangLuong.rdlc" />
     <EmbeddedResource Include="Report\rptNhanVien.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -256,9 +413,133 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLNHANSUDataSet10.xsc">
+      <DependentUpon>QLNHANSUDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet10.xss">
+      <DependentUpon>QLNHANSUDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet11.xsc">
+      <DependentUpon>QLNHANSUDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet11.xss">
+      <DependentUpon>QLNHANSUDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet12.xsc">
+      <DependentUpon>QLNHANSUDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet12.xss">
+      <DependentUpon>QLNHANSUDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet2.xsc">
+      <DependentUpon>QLNHANSUDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet2.xss">
+      <DependentUpon>QLNHANSUDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet3.xsc">
+      <DependentUpon>QLNHANSUDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet3.xss">
+      <DependentUpon>QLNHANSUDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet4.xsc">
+      <DependentUpon>QLNHANSUDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet4.xss">
+      <DependentUpon>QLNHANSUDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet5.xsc">
+      <DependentUpon>QLNHANSUDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet5.xss">
+      <DependentUpon>QLNHANSUDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet6.xsc">
+      <DependentUpon>QLNHANSUDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet6.xss">
+      <DependentUpon>QLNHANSUDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet7.xsc">
+      <DependentUpon>QLNHANSUDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet7.xss">
+      <DependentUpon>QLNHANSUDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet8.xsc">
+      <DependentUpon>QLNHANSUDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet8.xss">
+      <DependentUpon>QLNHANSUDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet9.xsc">
+      <DependentUpon>QLNHANSUDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QLNHANSUDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNHANSUDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNHANSUDataSet9.xss">
+      <DependentUpon>QLNHANSUDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Resources\default.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\phan-mem-quan-ly-nhan-su.jpg" />
+    <None Include="Resources\phan-mem-nhan-su-bia-lp.jpg" />
+    <None Include="Resources\R.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

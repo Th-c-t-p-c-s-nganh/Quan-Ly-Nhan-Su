@@ -27,8 +27,8 @@ namespace QuanLyNhanSu
         {
             // TODO: This line of code loads data into the 'qLNHANSUDataSet1.tb_CHUCVU' table. You can move, or remove it, as needed.
             this.tb_CHUCVUTableAdapter.Fill(this.qLNHANSUDataSet1.tb_CHUCVU);
-            _them = false;
             _CHUCVU = new CHUCVU();
+            _them = false;
             _showHide(true);
         }
 
@@ -50,12 +50,36 @@ namespace QuanLyNhanSu
             txtChucVu.Enabled = !kt;
         }
 
+        void SaveData()
+        {
+            if (_them)
+            {
+                tb_CHUCVU dt = new tb_CHUCVU();
+                dt.TENCV = txtChucVu.Text;
+                _CHUCVU.Add(dt);
+            }
+            else
+            {
+                var dt = _CHUCVU.getItem(_id);
+                dt.TENCV = txtChucVu.Text;
+                _CHUCVU.Edit(dt);
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            SaveData();
-            _them = false;
-            _showHide(true);
-            RefreshDataGrid();
+            try
+            {
+                SaveData();
+                _them = false;
+                _showHide(true);
+                MessageBox.Show("Cập nhật thành công ! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -95,23 +119,9 @@ namespace QuanLyNhanSu
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            MainForm frm = new MainForm();
+            frm.Show();
             this.Close();
-        }
-
-        void SaveData()
-        {
-            if (_them)
-            {
-                tb_CHUCVU dt = new tb_CHUCVU();
-                dt.TENCV = txtChucVu.Text;
-                _CHUCVU.Add(dt);
-            }
-            else
-            {
-                var dt = _CHUCVU.getItem(_id);
-                dt.TENCV = txtChucVu.Text;
-                _CHUCVU.Edit(dt);
-            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

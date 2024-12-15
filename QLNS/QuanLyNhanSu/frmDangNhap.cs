@@ -23,6 +23,12 @@ namespace QuanLyNhanSu
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             txtPW.UseSystemPasswordChar = true;
+            if (Properties.Settings.Default.LuuMatKhau)
+            {
+                txtTDN.Text = Properties.Settings.Default.TenDangNhap;
+                txtPW.Text = Properties.Settings.Default.MatKhau;
+                cboxLuuMK.Checked = true;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -54,11 +60,32 @@ namespace QuanLyNhanSu
             }
             else
             {
+                if (cboxLuuMK.Checked)
+                {
+                    Properties.Settings.Default.TenDangNhap = tdn;
+                    Properties.Settings.Default.MatKhau = pw;
+                    Properties.Settings.Default.LuuMatKhau = true;
+                }
+                else
+                {
+                    Properties.Settings.Default.TenDangNhap = string.Empty;
+                    Properties.Settings.Default.MatKhau = string.Empty;
+                    Properties.Settings.Default.LuuMatKhau = false;
+                }
+
+                Properties.Settings.Default.Save();
                 openForm(typeof(MainForm));   
+                //this.Hide();
             }
+
         }
 
-        private void txtTDN_TextChanged(object sender, EventArgs e)
+        private void cboxLuuMK_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
