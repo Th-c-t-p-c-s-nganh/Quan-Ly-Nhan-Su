@@ -32,7 +32,7 @@ Phần mềm quản lý nhân sự dành cho công ty MISA, hỗ trợ quản l�
 15. **Quản lý phụ cấp**: Theo dõi và quản lý các khoản phụ cấp cho nhân viên.
 16. **Quản lý hệ số lương**: Quản lý hệ số lương theo các quy định của công ty.
 
-## Use Case
+## Use Case Chính
 
 # 1. Use Case Đăng nhập hệ thống
 - **Actor**: Admin/Employee
